@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Bootstrap Project</title>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Bootstrap 4.5.2 -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      ;
+    ></script>
+
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/0c1170bc8d.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js"></script>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a href="#" class="nav-item nav-link"
+          ><i class="navbar-brand fas fa-user-ninja"></i
+          ><span class="navbar-text">Aspen North</span></a
+        >
+
+        <!-- navbar collapse-->
+        <a
+          href="#"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbar-menu"
+          ><i class="navbar-toggler-icon"></i
+        ></a>
+
+        <div class="navbar-collapse collapse" id="navbar-menu">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link" href="#home">Home</a>
+
+            <!--Dropdown menus-->
+            <div class="dropdown">
+              <a
+                class="nav-item nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                href="#projects"
+                >Projects</a
+              >
+              <div class="dropdown-menu project-dropdown">
+                <h5 class="dropdown-header">
+                  <i class="fab fa-python">Python</i>
+                </h5>
+                <a href="#pythonAnchor" class="dropdown-item small"
+                  >Python Project #1</a
+                >
+                <a href="#" class="dropdown-item small">Python Project #2</a>
+                <a href="#" class="dropdown-item small">Python Project #3</a>
+
+                <div class="dropdown-divider"></div>
+
+                <h5 class="dropdown-header">
+                  <i class="fab fa-python">Node</i>
+                </h5>
+                <a href="#" class="dropdown-item small">Node Project #1</a>
+                <a href="#" class="dropdown-item small">Node Project #1</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <a
+                class="nav-item nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                href="#shop"
+                >Shop</a
+              >
+              <div class="dropdown-menu">
+                <h5 class="dropdown-header">T-shirts</h5>
+                <a href="#" class="dropdown-item small">Retro Shirts</a>
+                <a href="#" class="dropdown-item small">Urban Shirts</a>
+                <a href="#" class="dropdown-item small">Classic Shirts</a>
+
+                <div class="dropdown-divider"></div>
+
+                <h5 class="dropdown-header">Hoodies</h5>
+                <a href="#" class="dropdown-item small">Retro Hoodies</a>
+                <a href="#" class="dropdown-item small">Urban Hoodies</a>
+                <a href="#" class="dropdown-item small">Classic Hoodies</a>
+
+                <div class="dropdown-divider"></div>
+
+                <h5 class="dropdown-header">Headbands</h5>
+                <a href="#" class="dropdown-item small">Girls</a>
+                <a href="#" class="dropdown-item small">Guys</a>
+                <a href="#" class="dropdown-item small">Unisex</a>
+              </div>
+            </div>
+
+            <a class="nav-item nav-link" href="#contact"
+              ><i class="fas fa-envelope"></i>Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Slider -->
+    <div class="carousel" id="mainSlide">
+      <div class="carousel-inner">
+        <img
+          class="w-100 d-block"
+          src="./images/drilldown.jpg"
+          alt="Mountain Scenes"
+        />
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="container-fluid p5" id="pythonAnchor">
+      <h1>Content</h1>
+    </div>
+
+    <!-- Cards -->
+    <div class="card-deck">
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="./images/firstcard.jpg"
+          alt="Computer image"
+        />
+        <div class="card-body">
+          <h6 class="card-title">Project !</h6>
+          <p class="card-text">This is the first project.</p>
+          <p class="text-center">
+            <a class="btn btn-sm btn-secondary" href="#">More Info</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="./images/firstcard.jpg"
+          alt="Computer image"
+        />
+        <div class="card-body">
+          <h6 class="card-title">Project !</h6>
+          <p class="card-text">This is the first project.</p>
+          <p class="text-center">
+            <a class="btn btn-sm btn-secondary" href="#">More Info</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="./images/firstcard.jpg"
+          alt="Computer image"
+        />
+        <div class="card-body">
+          <h6 class="card-title">Project !</h6>
+          <p class="card-text">This is the first project.</p>
+          <p class="text-center">
+            <a class="btn btn-sm btn-secondary" href="#">More Info</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid text-center">Aspen North &copy; 2020</footer>
+  </body>
+</html>
